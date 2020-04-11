@@ -6,27 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
 </head>
-<body>
-    <form>
-        <div class="content">
-                <div class="alert alert-danger" role="alert">
-                    Some fildes are messing
+<body>>
+        <div class="container">
+            <h2>Payment form exemple</h2>
+            <hr>
+            <div class="alert alert-danger" role="alert">
+               <b> Some fields are missing</b>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-5">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Card #</label>
+                            <input type="text" placeholder="XXXXXXXXXXXXXXXXXXX" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <label for="exampleFormControlInput1">CVC #</label>
+                        <input type="text" placeholder="0000" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="exampleFormControlInput1">Amount</label>
+                       <input type="text" placeholder="Amount" class="form-control">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Card #</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted"></html>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">First Name</label>
+                            <input type="text"class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleFormControlInput1">Last Name</label>
+                        <input type="text"class="form-control">
+                    </div>
                 </div>
-                    <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+               
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">City</label>
+                            <input type="text"class="form-control">
+                        </div>
+                    </div>
+                        <div class="col-3">
+                            <label for="exampleFormControlSelect1">State</label>
+                        <select class="form-control"id="exampleFormControlSelect2">
+                            <option>Pick a State</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="exampleFormControlInput1">Postal Code</label>
+                        <input type="text"class="form-control">
+                    </div>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="bg-secondary">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-mastercard"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions"  value="option2">
+                                <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-diners-club"></i></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option4">
+                                <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-amex"></i></label>
+                            </div>
+                         </div>
+                    </div>  
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Messege</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <p>Add any notes here.</p>
+                        </div>
+                    </div>   
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="row">
+                    <div class="col-10"></div>
+                    <button type="button" class="btn btn-secondary">Send</button>
+                    <button type="button" class="btn btn-primary">Cancel</button>
+                </div>
+            </form>
         </div>
-      </form>
     <script src="https://kit.fontawesome.com/048e0a12a9.js" crossorigin="anonymous"></script>
 </body>    
